@@ -1,0 +1,24 @@
+public static void main(String[] args) {
+        double pi = 0;
+        double nextValue = 0;
+        double lastPi = 0;
+        double delta = 0;
+        double accuracy = 0.000001; 
+        int i = 0;
+        
+        do
+        {
+            double n = (2 * i) + 1;
+            lastPi = pi;
+            nextValue = Math.pow(-1, i) * (1/n);
+            pi = nextValue + pi;
+            delta = pi - lastPi;
+            i++;
+        }
+        while (delta > accuracy || delta < -accuracy);
+        
+        double approximatedPi = pi * 4;
+        
+        System.out.println("This is the pi value approximated: " + approximatedPi);
+        System.out.println("This is the actual value of pi: " + Math.PI);
+    }

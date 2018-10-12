@@ -1,0 +1,40 @@
+PseudoCode
+BetterRectangle Class
+BetterRectangle()
+	setlocation (origin);
+	setsize (unit rectangle);
+BetterRectangle (dimensions)
+	setlocation (origin);
+	setsize (dimensions);
+BetterRectangle (location, dimensions)
+	setlocation (location);
+	setsize (dimensions);
+BetterRectangle (another rectangle)
+	copy another rectangle properties;
+getArea()
+	width * height;
+getPerimeter()
+	(width + height) * 2;
+getSlope()
+	height / width;
+getMidPoint()
+
+congruent(r)
+	if width and height are equal then true
+similar(r)
+	if area is equal then true
+equivalent(r)
+	if perimeter is equal then true
+concentric(r)
+	if midpoint equal then true
+equals(r)
+	if same properties then true
+scaleBy(s)
+	if s is +, then width and height * s
+toString()
+	add area, perimeter, midpoint, slope
+
+BRectTester Class
+	test all BetterRectangle methods and display
+	expected values as well
+	

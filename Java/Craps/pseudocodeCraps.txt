@@ -1,0 +1,59 @@
+Die Class
+generate number between 1 and numSides;
+return number;
+
+Craps Class
+roll()
+	roll two dice and sum;
+	increment roll counter;
+	incerement total roll counter;
+playgame()
+	roll();
+	point = sum;
+	if (point = 7 or 11)
+		player won;
+		comingOutWin++;
+	else if (point != 2, 3, or 12)
+		do {
+		roll();
+		value = sum;
+		}
+		while (value is not point or 7)
+		if (value == point)
+			player won;
+			gameswon++
+		else
+			player lost;
+	else
+		player lost;
+		comingOutLose++;
+resetgame()
+	point = 0;
+	add roll counter to an array;
+	roll counter = 0;
+
+averageNumRolls(number of games)
+	total roll counter / number of games;
+
+percentChanceWin(number of games)
+	gameswon / number games;
+
+perecentComingOutWin(number of games)
+	comingOutWin / number of games;
+
+percentComingOutLose(number of games)
+	comingOutLose / number of games;
+longestGame()
+	longest = 0;
+	for (element in roll counter)
+		if (element > longest)
+			element = longest;
+	return longest;
+
+Analyser Class
+	prompt user for number of games
+	for each game
+		resetgame();
+		playgame();
+	print out stats and results;
+	

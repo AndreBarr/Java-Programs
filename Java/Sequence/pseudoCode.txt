@@ -1,0 +1,15 @@
+SequenceDemo Pseudo
+void validate
+	if two values of input
+		if value == digits
+			true
+		else
+			return false
+		if number is < 1
+			return false
+	else
+		return false
+String printPrimes
+	
+	
+	
